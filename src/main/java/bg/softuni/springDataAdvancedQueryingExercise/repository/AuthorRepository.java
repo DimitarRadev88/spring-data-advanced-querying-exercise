@@ -5,11 +5,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 
 @Repository
 public interface AuthorRepository extends JpaRepository<Author, Long> {
-
 
     @Query("""
             FROM Author a
@@ -23,5 +23,16 @@ public interface AuthorRepository extends JpaRepository<Author, Long> {
             ORDER BY size(a.books) DESC
             """)
     List<Author> findAllOrderByBooksCountDescending();
+
+    List<Author> findAllByFirstNameEndingWith(String nameEnd);
+
+    @Query("""
+            SELECT a, SUM(b.copies)
+            FROM Author a
+            JOIN a.books b
+            GROUP BY a.id
+            ORDER BY SUM(b.copies) DESC
+            """)
+    List<Object[]> findAllAuthorsWithSumOfBookCopiesOrderByBooksCopiesDesc();
 
 }

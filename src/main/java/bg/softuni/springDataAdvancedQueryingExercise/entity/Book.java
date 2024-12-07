@@ -36,6 +36,10 @@ public class Book extends BaseEntity {
         this.author = author;
     }
 
+    public Book(String title, BigDecimal price, EditionType editionType, AgeRestriction ageRestriction) {
+        this(title, null, price, editionType, null, ageRestriction, null, null);
+    }
+
     @Column(name = "title", nullable = false)
     public String getTitle() {
         return title;

@@ -6,7 +6,9 @@ import bg.softuni.springDataIntroExercise.service.interfaces.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Service
@@ -38,6 +40,22 @@ public class AuthorServiceImpl implements AuthorService {
     @Override
     public List<Author> getAllAuthorsOrderedByCountOfBooksDescending() {
         return authorRepository.findAllOrderByBooksCountDescending();
+    }
+
+    @Override
+    public List<Author> getAllAuthorsWithFirstNameEndingWith(String nameEnd) {
+        return authorRepository.findAllByFirstNameEndingWith(nameEnd);
+    }
+
+    @Override
+    public Map<Author, Long> getAllAuthorsSortedByNumberOfBooksCopies() {
+        List<Object[]> authorsWithSumOfBookCopies = authorRepository.findAllAuthorsWithSumOfBookCopiesOrderByBooksCopiesDesc();
+
+        Map<Author, Long> result = new LinkedHashMap<>();
+
+        authorsWithSumOfBookCopies.forEach(r -> result.put(((Author) r[0]), (long) r[1]));
+
+        return result;
     }
 
 }
