@@ -1,10 +1,7 @@
-package bg.softuni.springDataIntroExercise.service.interfaces;
+package bg.softuni.springDataAdvancedQueryingExercise.service.interfaces;
 
-import bg.softuni.springDataIntroExercise.entity.Author;
-import jakarta.persistence.criteria.CriteriaBuilder;
-import org.springframework.stereotype.Service;
+import bg.softuni.springDataAdvancedQueryingExercise.entity.Author;
 
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 

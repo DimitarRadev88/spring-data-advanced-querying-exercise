@@ -1,11 +1,10 @@
-package bg.softuni.springDataIntroExercise.service;
+package bg.softuni.springDataAdvancedQueryingExercise.service;
 
-import bg.softuni.springDataIntroExercise.entity.Author;
-import bg.softuni.springDataIntroExercise.entity.Book;
-import bg.softuni.springDataIntroExercise.enums.AgeRestriction;
-import bg.softuni.springDataIntroExercise.enums.EditionType;
-import bg.softuni.springDataIntroExercise.repository.BookRepository;
-import bg.softuni.springDataIntroExercise.service.interfaces.BookService;
+import bg.softuni.springDataAdvancedQueryingExercise.entity.Book;
+import bg.softuni.springDataAdvancedQueryingExercise.enums.AgeRestriction;
+import bg.softuni.springDataAdvancedQueryingExercise.enums.EditionType;
+import bg.softuni.springDataAdvancedQueryingExercise.repository.BookRepository;
+import bg.softuni.springDataAdvancedQueryingExercise.service.interfaces.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

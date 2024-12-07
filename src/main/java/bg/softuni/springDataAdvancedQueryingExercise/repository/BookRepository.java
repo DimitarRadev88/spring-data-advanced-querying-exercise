@@ -1,8 +1,8 @@
-package bg.softuni.springDataIntroExercise.repository;
+package bg.softuni.springDataAdvancedQueryingExercise.repository;
 
-import bg.softuni.springDataIntroExercise.entity.Book;
-import bg.softuni.springDataIntroExercise.enums.AgeRestriction;
-import bg.softuni.springDataIntroExercise.enums.EditionType;
+import bg.softuni.springDataAdvancedQueryingExercise.entity.Book;
+import bg.softuni.springDataAdvancedQueryingExercise.enums.AgeRestriction;
+import bg.softuni.springDataAdvancedQueryingExercise.enums.EditionType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

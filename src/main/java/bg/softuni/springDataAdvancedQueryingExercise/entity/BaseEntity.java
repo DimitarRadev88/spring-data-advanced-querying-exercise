@@ -1,4 +1,4 @@
-package bg.softuni.springDataIntroExercise.entity;
+package bg.softuni.springDataAdvancedQueryingExercise.entity;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

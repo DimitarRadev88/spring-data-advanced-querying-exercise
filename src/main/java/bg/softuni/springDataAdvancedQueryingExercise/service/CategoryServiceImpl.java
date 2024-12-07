@@ -1,8 +1,8 @@
-package bg.softuni.springDataIntroExercise.service;
+package bg.softuni.springDataAdvancedQueryingExercise.service;
 
-import bg.softuni.springDataIntroExercise.entity.Category;
-import bg.softuni.springDataIntroExercise.repository.CategoryRepository;
-import bg.softuni.springDataIntroExercise.service.interfaces.CategoryService;
+import bg.softuni.springDataAdvancedQueryingExercise.entity.Category;
+import bg.softuni.springDataAdvancedQueryingExercise.repository.CategoryRepository;
+import bg.softuni.springDataAdvancedQueryingExercise.service.interfaces.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

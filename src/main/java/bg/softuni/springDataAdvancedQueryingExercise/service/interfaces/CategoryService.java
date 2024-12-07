@@ -1,6 +1,6 @@
-package bg.softuni.springDataIntroExercise.service.interfaces;
+package bg.softuni.springDataAdvancedQueryingExercise.service.interfaces;
 
-import bg.softuni.springDataIntroExercise.entity.Category;
+import bg.softuni.springDataAdvancedQueryingExercise.entity.Category;
 
 import java.util.List;
 import java.util.Set;

@@ -1,6 +1,6 @@
-package bg.softuni.springDataIntroExercise.repository;
+package bg.softuni.springDataAdvancedQueryingExercise.repository;
 
-import bg.softuni.springDataIntroExercise.entity.Category;
+import bg.softuni.springDataAdvancedQueryingExercise.entity.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,11 +1,10 @@
-package bg.softuni.springDataIntroExercise.service.interfaces;
+package bg.softuni.springDataAdvancedQueryingExercise.service.interfaces;
 
-import bg.softuni.springDataIntroExercise.entity.Book;
-import bg.softuni.springDataIntroExercise.enums.AgeRestriction;
-import bg.softuni.springDataIntroExercise.enums.EditionType;
+import bg.softuni.springDataAdvancedQueryingExercise.entity.Book;
+import bg.softuni.springDataAdvancedQueryingExercise.enums.AgeRestriction;
+import bg.softuni.springDataAdvancedQueryingExercise.enums.EditionType;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.util.List;
 
 public interface BookService {

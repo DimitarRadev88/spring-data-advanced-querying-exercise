@@ -1,7 +1,7 @@
-package bg.softuni.springDataIntroExercise.entity;
+package bg.softuni.springDataAdvancedQueryingExercise.entity;
 
-import bg.softuni.springDataIntroExercise.enums.AgeRestriction;
-import bg.softuni.springDataIntroExercise.enums.EditionType;
+import bg.softuni.springDataAdvancedQueryingExercise.enums.AgeRestriction;
+import bg.softuni.springDataAdvancedQueryingExercise.enums.EditionType;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;

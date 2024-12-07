@@ -1,8 +1,8 @@
-package bg.softuni.springDataIntroExercise.service;
+package bg.softuni.springDataAdvancedQueryingExercise.service;
 
-import bg.softuni.springDataIntroExercise.entity.Author;
-import bg.softuni.springDataIntroExercise.repository.AuthorRepository;
-import bg.softuni.springDataIntroExercise.service.interfaces.AuthorService;
+import bg.softuni.springDataAdvancedQueryingExercise.entity.Author;
+import bg.softuni.springDataAdvancedQueryingExercise.repository.AuthorRepository;
+import bg.softuni.springDataAdvancedQueryingExercise.service.interfaces.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

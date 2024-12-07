@@ -1,11 +1,10 @@
-package bg.softuni.springDataIntroExercise.repository;
+package bg.softuni.springDataAdvancedQueryingExercise.repository;
 
-import bg.softuni.springDataIntroExercise.entity.Author;
+import bg.softuni.springDataAdvancedQueryingExercise.entity.Author;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import java.util.LinkedHashMap;
 import java.util.List;
 
 @Repository
